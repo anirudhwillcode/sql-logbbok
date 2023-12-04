@@ -1,0 +1,125 @@
+------------------------------------------------------------  1DA21CS021 - LOGBOOK ------------------------------------------------------------
+
+-------------------------------------------------------------------- DATE:12/4/2023-------------------------------------------------------------
+
+CREATE TABLE Employee (
+    ID INT PRIMARY KEY,
+    FirstName VARCHAR2(50),
+    LastName VARCHAR2(50),
+    Email VARCHAR2(100),
+    PhoneNumber VARCHAR2(15),
+    HireDate DATE,
+    JobID VARCHAR2(10),
+    Salary NUMBER(8, 2),
+    ManagerID INT,
+    DepartmentID INT
+);
+
+
+INSERT INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+VALUES (1, 'Anirudh', 'R', 'anirudh@gmail.com', '76769937', TO_DATE('2020/02/13', 'YYYY/MM/DD'), '1775858', 50000.00, 1234567232, 89);
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INSERT ALL
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (1, 'Anirudh', 'R', 'anirudh@gmail.com', '76769937', TO_DATE('2020/02/13', 'YYYY/MM/DD'), '1775858', 50000.00, 1234567232, 89)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (2, 'John', 'Doe', 'john@example.com', '123456789', TO_DATE('2021/05/20', 'YYYY/MM/DD'), '9876543', 60000.00, 987654321, 45)
+SELECT * FROM dual;
+
+# this command is used to insert multiple data into the database 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CREATE TABLE Employee (
+    ID INT PRIMARY KEY,
+    FirstName VARCHAR2(50),
+    LastName VARCHAR2(50),
+    Email VARCHAR2(100),
+    PhoneNumber VARCHAR2(15),
+    HireDate DATE,
+    JobID VARCHAR2(10),
+    Salary NUMBER(8, 2),
+    ManagerID INT,
+    DepartmentID INT
+);
+
+INSERT ALL
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (1, 'Anirudh', 'R', 'anirudh@gmail.com', '76769937', TO_DATE('2020/02/13', 'YYYY/MM/DD'), '1775858', 50000.00, 1234567232, 89)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (2, 'John', 'Doe', 'john@example.com', '123456789', TO_DATE('2021/05/20', 'YYYY/MM/DD'), '9876543', 60000.00, 987654321, 45)
+
+SELECT * FROM dual;
+
+##### now lets add 20 entries to the thingy####
+
+
+
+CREATE TABLE Employee (
+    ID INT PRIMARY KEY,
+    FirstName VARCHAR2(50),
+    LastName VARCHAR2(50),
+    Email VARCHAR2(100),
+    PhoneNumber VARCHAR2(15),
+    HireDate DATE,
+    JobID VARCHAR2(10),
+    Salary NUMBER(8, 2),
+    ManagerID INT,
+    DepartmentID INT
+);
+
+
+  INSERT ALL
+  
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (3, 'Michael', 'Johnson', 'michael.johnson@example.com', '555555555', TO_DATE('2023/03/20', 'YYYY/MM/DD'), '1003', 65000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (4, 'Emily', 'Williams', 'emily.williams@example.com', '222222222', TO_DATE('2023/04/10', 'YYYY/MM/DD'), '1004', 58000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (5, 'David', 'Brown', 'david.brown@example.com', '333333333', TO_DATE('2023/05/05', 'YYYY/MM/DD'), '1005', 62000.00, 123456789, 32)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (6, 'Sarah', 'Johnson', 'sarah.johnson@example.com', '444444444', TO_DATE('2023/06/10', 'YYYY/MM/DD'), '1006', 54000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (7, 'Matthew', 'Martinez', 'matthew.martinez@example.com', '555555555', TO_DATE('2023/07/20', 'YYYY/MM/DD'), '1007', 59000.00, 123456789, 32)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (8, 'Olivia', 'Garcia', 'olivia.garcia@example.com', '666666666', TO_DATE('2023/08/05', 'YYYY/MM/DD'), '1008', 63000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (9, 'William', 'Lee', 'william.lee@example.com', '777777777', TO_DATE('2023/09/15', 'YYYY/MM/DD'), '1009', 57000.00, 123456789, 32)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (10, 'Ava', 'Rodriguez', 'ava.rodriguez@example.com', '888888888', TO_DATE('2023/10/12', 'YYYY/MM/DD'), '1010', 60000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (11, 'James', 'Hernandez', 'james.hernandez@example.com', '999999999', TO_DATE('2023/11/18', 'YYYY/MM/DD'), '1011', 58000.00, 123456789, 32)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (12, 'Sophia', 'Lopez', 'sophia.lopez@example.com', '111111111', TO_DATE('2023/12/05', 'YYYY/MM/DD'), '1012', 64000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (13, 'Ethan', 'Gonzalez', 'ethan.gonzalez@example.com', '222222222', TO_DATE('2024/01/02', 'YYYY/MM/DD'), '1013', 55000.00, 123456789, 32)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (14, 'Mia', 'Perez', 'mia.perez@example.com', '333333333', TO_DATE('2024/02/09', 'YYYY/MM/DD'), '1014', 59000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (15, 'Alexander', 'Sanchez', 'alexander.sanchez@example.com', '444444444', TO_DATE('2024/03/20', 'YYYY/MM/DD'), '1015', 63000.00, 123456789, 32)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (16, 'Amelia', 'Torres', 'amelia.torres@example.com', '555555555', TO_DATE('2024/04/17', 'YYYY/MM/DD'), '1016', 56000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (17, 'Daniel', 'Rivera', 'daniel.rivera@example.com', '666666666', TO_DATE('2024/05/08', 'YYYY/MM/DD'), '1017', 61000.00, 123456789, 32)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (18, 'Abigail', 'Gomez', 'abigail.gomez@example.com', '777777777', TO_DATE('2024/06/19', 'YYYY/MM/DD'), '1018', 57000.00, 987654321, 45)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (19, 'Logan', 'Reyes', 'logan.reyes@example.com', '888888888', TO_DATE('2024/07/22', 'YYYY/MM/DD'), '1019', 60000.00, 123456789, 32)
+    INTO Employee (ID, FirstName, LastName, Email, PhoneNumber, HireDate, JobID, Salary, ManagerID, DepartmentID)
+    VALUES (20, 'Isabella', 'Mendoza', 'isabella.mendoza@example.com', '999999999', TO_DATE('2024/08/31', 'YYYY/MM/DD'), '1020', 59000.00, 987654321, 45)
+SELECT * FROM dual;
+
+
+SELECT * FROM Employee;
+
+ { Note: if i change the id to the same as one before it shows error because it has been defined a s aprimary key}
+
+
+
+
+
