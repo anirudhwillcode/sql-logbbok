@@ -1,4 +1,7 @@
-------------------------------------------------------------  1DA21CS021 - LOGBOOK ------------------------------------------------------------
+  ______________________________________________________________________/// |``````````````````````| \\\_______________________________________________________________________________________________
+________________________________________________________________________----| 1DA21CS021 - LOGBOOK |----_______________________________________________________________________________________________--
+                                                                        \\\ |______________________| ///
+
 
 -------------------------------------------------------------------- DATE:12/4/2023-------------------------------------------------------------
 
@@ -118,6 +121,53 @@ SELECT * FROM dual;
 SELECT * FROM Employee;
 
  { Note: if i change the id to the same as one before it shows error because it has been defined a s aprimary key}
+
+
+-----------------------------------------------------------------------------------------DATE-(12/11/2023)----------------------------------------------------------------
+
+###retrival queries QNO-1###
+
+CREATE TABLE EMPLOTYEE(
+     FNAME VARCHAR2(120) NOT NULL,
+     MINIT VARCHAR2(120),
+     LNAME VARCHAR2(120) NOT NULL,
+     SSN INTEGER PRIMARY KEY,
+     BDATE VARCHAR2(120) NOT NULL,
+     ADDRESS VARCHAR2(50),
+     SEX VARCHAR2(100),
+     SALARY INTEGER NOT NULL,
+     DNO INTEGER
+);
+
+
+DROP TABLE EMPLOTYEE
+
+INSERT INTO EMPLOTYEE
+VALUES('JHOON','DXB','SmiXPth',123456789,'1980-01-09','RAMMURTHYNAFFFGAR ARUMBINARO','F',45009,498);
+
+INSERT INTO EMPLOTYEE
+VALUES('JHON','B','Smith',12345678,'1980-01-09','RAMMURTHYNAGAR ARUMBNNINARO','F',4503309,45);
+
+INSERT INTO EMPLOTYEE
+VALUES('JHODDN','BXX','SmiCZth',1236789,'1980-01-09','RAMMUNDRTHYNAGAR ARUMBINARO','M',4508809,455);
+
+INSERT INTO EMPLOTYEE
+VALUES('JHAAON','BQQ','SmZith',123326789,'1980-01-09','RAMMURTHYNAGAR ADRUMBINARO','F',4500809,455);
+
+SELECT * FROM EMPLOTYEE
+
+SELECT BDATE,ADDRESS
+FROM EMPLOTYEE
+WHERE FNAME='JHON' AND MINIT='B' AND LNAME='Smith'
+
+
+
+
+
+
+
+
+
 
 
 
